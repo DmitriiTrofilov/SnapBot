@@ -9,7 +9,7 @@ let credentials = {
 }
 
 async function sendSnap() {
-   await bot.lauchSnapchat({headless:false}) // makes the browser visible 
+   await bot.lauchSnapchat({headless:true}) // makes the browser visible 
    await bot.login(credentials)
    await bot.captureSnap({caption:"Hello world"})
    await bot.screenshot({path:"screenshot.png"})
